@@ -1,0 +1,15 @@
+$platinum: #EBEBEB;
+$onyx: #36393D;
+$eerieblack: #1E2226;
+$maxpurple: #B4A4F4;
+$medpurple: #957FEF;
+
+$theme-colors: (
+        "platinum": $platinum,
+        "onyx": $onyx,
+        "eerie": $eerieblack,
+        "medpurple": $medpurple,
+        "maxpurple": $maxpurple
+);
+
+@import "~bootstrap/scss/bootstrap";
