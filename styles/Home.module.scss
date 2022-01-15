@@ -43,3 +43,8 @@ $maxpurple: #B4A4F4;
     0 0 140px $medpurple;
   }
 }
+
+.cardContainer {
+  height: 53vh;
+  overflow-y: auto;
+}
