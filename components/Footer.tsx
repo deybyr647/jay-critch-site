@@ -1,4 +1,5 @@
-import { Navbar, Nav } from "react-bootstrap";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
 
 const Footer = () => (
   <Navbar bg={"maxpurple"} className={"justify-content-center"}>

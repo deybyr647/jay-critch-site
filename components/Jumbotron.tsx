@@ -1,5 +1,7 @@
+import { ReactNode } from "react";
+
 interface IJumbotron {
-  children?: React.ReactNode;
+  children?: ReactNode;
   className?: string;
 }
 

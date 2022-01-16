@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
-import { Nav, Navbar } from "react-bootstrap";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
 
 import tmeLogo from "../public/tme.jpg";
 
@@ -25,15 +25,25 @@ const Navigation = () => {
       <Navbar.Collapse id={"navigation-nav"}>
         <Nav className={"ms-auto"}>
           <Nav.Link href={"#music"}>Music</Nav.Link>
-          <Nav.Link href={"https://soundcloud.com/JAYCRITCH"}>
+          <Nav.Link
+            href={"https://soundcloud.com/JAYCRITCH"}
+            target={"_blank"}
+            rel={"noopener noreferrer"}
+          >
             SoundCloud
           </Nav.Link>
           <Nav.Link
             href={"https://open.spotify.com/artist/6Av6GMCOznZIlHuNcBWgf4"}
+            target={"_blank"}
+            rel={"noopener noreferrer"}
           >
             Spotify
           </Nav.Link>
-          <Nav.Link href={"https://www.talkmoneytme.net/"}>
+          <Nav.Link
+            href={"https://www.talkmoneytme.net/"}
+            target={"_blank"}
+            rel={"noopener noreferrer"}
+          >
             Talk Money Ent.
           </Nav.Link>
         </Nav>
