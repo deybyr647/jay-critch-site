@@ -1,23 +1,32 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from "next";
 import {
-  availableAlbums,
   getAlbum,
   getTopTracks,
-  getRandInt,
   authorizeClient,
+  ISong,
+  shuffle,
 } from "../../components/spotify";
 
 const spotifyEndpoint = async (req: NextApiRequest, res: NextApiResponse) => {
   await authorizeClient();
 
-  const albumTracks = await getAlbum(
-    availableAlbums[getRandInt(0, availableAlbums.length - 1)]
-  );
+  const ctTracks: ISong[] = await getAlbum("0zNGd4zx2YBSeJwVlndyIF");
+  const swlTracks: ISong[] = await getAlbum("685WVtJgKtEdGCGkf4tzgv");
+  const hfTracks: ISong[] = await getAlbum("2Ony9dUqmqed29IPo8fsxv");
+  const topTracks: ISong[] = await getTopTracks();
 
-  const topTracks = await getTopTracks();
+  const allTracks: ISong[] = [
+    ...topTracks,
+    ...ctTracks,
+    ...hfTracks,
+    ...swlTrac,
+  ].filter((track: ISong) => {
+    const { previewURL, id } = track;
+    return previewURL !== null && id !== "2HZ4WqI3pE4HKRigjA6tii";
+  });
 
-  res.status(200).json([...topTracks, ...albumTracks]);
+  res.status(200).json([...shuffle(allTracks)]);
 };
 
 export default spotifyEndpoint;
