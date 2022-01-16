@@ -20,7 +20,7 @@ const spotifyEndpoint = async (req: NextApiRequest, res: NextApiResponse) => {
     ...topTracks,
     ...ctTracks,
     ...hfTracks,
-    ...swlTrac,
+    ...swlTracks,
   ].filter((track: ISong) => {
     const { previewURL, id } = track;
     return previewURL !== null && id !== "2HZ4WqI3pE4HKRigjA6tii";
