@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Image from "next/image";
+import { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
 import Metadata from "../components/Metadata";
@@ -20,10 +21,10 @@ const Landing: NextPage = () => {
 
         <Row>
           <Col md={12} lg={4}>
-            <Jumbotron className={"bg-platinum text-center"}>
+            <Jumbotron className={"bg-onyx text-center text-platinum"}>
               <h1>About Me</h1>
             </Jumbotron>
-            <Jumbotron>
+            <Jumbotron className={"bg-onyx text-platinum"}>
               <p>
                 HAYY! What's up! My name is Jason Critchlow, better known as Jay
                 Critch. I'm a rapper hailing from Brooklyn, New York, from the
@@ -61,7 +62,7 @@ const Landing: NextPage = () => {
           </Col>
 
           <Col md={12} lg={4}>
-            <Jumbotron className={"bg-platinum text-center"}>
+            <Jumbotron className={"bg-onyx text-center text-platinum"}>
               <h1>My Music</h1>
             </Jumbotron>
 

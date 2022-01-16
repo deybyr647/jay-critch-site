@@ -4,7 +4,7 @@ import styles from "../styles/Home.module.scss";
 
 const MusicCardContainer = () => {
   return (
-    <Jumbotron className={`bg-platinum ${styles.cardContainer}`}>
+    <Jumbotron className={`bg-onyx text-platinum ${styles.cardContainer}`}>
       <MusicCard />
       <MusicCard />
       <MusicCard />
