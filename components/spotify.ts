@@ -1,6 +1,5 @@
 import TrackObjectSimplified = SpotifyApi.TrackObjectSimplified;
 import TrackObjectFull = SpotifyApi.TrackObjectFull;
-
 const SpotifyWebApi = require("spotify-web-api-node");
 
 interface ISong {

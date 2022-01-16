@@ -1,4 +1,5 @@
-import { Card, Button } from "react-bootstrap";
+import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
 import { ISong } from "./spotify";
 
 const MusicCard = ({ previewURL, name, image, spotifyURL }: ISong) => {
