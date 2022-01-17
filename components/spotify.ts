@@ -1,5 +1,6 @@
 import TrackObjectSimplified = SpotifyApi.TrackObjectSimplified;
 import TrackObjectFull = SpotifyApi.TrackObjectFull;
+import ImageObject = SpotifyApi.ImageObject;
 const SpotifyWebApi = require("spotify-web-api-node");
 
 interface ISong {
@@ -65,7 +66,7 @@ const getAlbum = async (
 
     return {
       spotifyURL: spotify,
-      image: images[1],
+      image: images.find((img: ImageObject) => img.width === 300),
       previewURL: preview_url,
       name,
       id,
@@ -89,10 +90,10 @@ const getTopTracks = async (
 
     return {
       spotifyURL: spotify,
-      image: images[1],
+      image: images.find((img: ImageObject) => img.width === 300),
       previewURL: preview_url,
       name,
-      id,
+      i,
     };
   });
 };

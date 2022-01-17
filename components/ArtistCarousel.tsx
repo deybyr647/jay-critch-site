@@ -8,6 +8,8 @@ import tmeNana from "/public/tme/artists/tmenana.webp";
 import tmeVendetta from "/public/tme/artists/vendetta.webp";
 import tmeTape2 from "/public/tme/artists/tmetape2.webp";
 
+import styles from "../styles/Home.module.scss";
+
 const ArtistCarousel = () => {
   return (
     <Carousel className={"w-75"}>
@@ -21,7 +23,16 @@ const ArtistCarousel = () => {
         />
 
         <Carousel.Caption>
-          <h3 className={"text-platinum bg-onyx"}>Talk Money Ent.</h3>
+          <h3 className={"text-platinum bg-onyx"}>
+            <a
+              href={"https://soundcloud.com/talkmoneygang"}
+              className={styles.extLink}
+              target={"_blank"}
+              rel={"noopener noreferrer"}
+            >
+              Talk Money Ent.
+            </a>
+          </h3>
         </Carousel.Caption>
       </Carousel.Item>
 
@@ -35,7 +46,16 @@ const ArtistCarousel = () => {
         />
 
         <Carousel.Caption>
-          <h3 className={"text-platinum bg-onyx"}>Mally Bandz</h3>
+          <h3 className={"text-platinum bg-onyx"}>
+            <a
+              href={"https://soundcloud.com/1mally"}
+              className={styles.extLink}
+              target={"_blank"}
+              rel={"noopener noreferrer"}
+            >
+              Mally Bandz
+            </a>
+          </h3>
         </Carousel.Caption>
       </Carousel.Item>
 
@@ -49,7 +69,16 @@ const ArtistCarousel = () => {
         />
 
         <Carousel.Caption>
-          <h3 className={"text-platinum"}>Vendetta</h3>
+          <h3 className={"text-platinum"}>
+            <a
+              href={"https://soundcloud.com/vendddeta"}
+              className={styles.extLink}
+              target={"_blank"}
+              rel={"noopener noreferrer"}
+            >
+              Vendetta
+            </a>
+          </h3>
         </Carousel.Caption>
       </Carousel.Item>
 
@@ -63,7 +92,16 @@ const ArtistCarousel = () => {
         />
 
         <Carousel.Caption>
-          <h3 className={"text-platinum"}>SaeTheGuard</h3>
+          <h3 className={"text-platinum"}>
+            <a
+              href={"https://soundcloud.com/blockgangsae"}
+              className={styles.extLink}
+              target={"_blank"}
+              rel={"noopener noreferrer"}
+            >
+              SaeTheGuard
+            </a>
+          </h3>
         </Carousel.Caption>
       </Carousel.Item>
 
@@ -77,7 +115,16 @@ const ArtistCarousel = () => {
         />
 
         <Carousel.Caption>
-          <h3 className={"text-platinum bg-onyx"}>TME Nana</h3>
+          <h3 className={"text-platinum bg-onyx"}>
+            <a
+              href={"https://soundcloud.com/tme-nana"}
+              className={styles.extLink}
+              target={"_blank"}
+              rel={"noopener noreferrer"}
+            >
+              TME Nana
+            </a>
+          </h3>
         </Carousel.Caption>
       </Carousel.Item>
 
@@ -91,7 +138,16 @@ const ArtistCarousel = () => {
         />
 
         <Carousel.Caption>
-          <h3 className={"text-platinum bg-onyx"}>Mari Mac</h3>
+          <h3 className={"text-platinum bg-onyx"}>
+            <a
+              href={"https://soundcloud.com/maritheprophet"}
+              className={styles.extLink}
+              target={"_blank"}
+              rel={"noopener noreferrer"}
+            >
+              Mari Mac
+            </a>
+          </h3>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

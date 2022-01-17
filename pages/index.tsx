@@ -72,6 +72,12 @@ const Landing: NextPage = () => {
                 recent projects include my albums "Signed With Love" and "Critch
                 Tape".
               </p>
+              <br /> <br />
+              <p>
+                Feel free to checkout my music on Spotify, SoundCloud, or any
+                other music provider of your choice (Hint Hint, go to SoundCloud
+                for exclusive & unreleased music)
+              </p>
             </Jumbotron>
           </Col>
         </Row>

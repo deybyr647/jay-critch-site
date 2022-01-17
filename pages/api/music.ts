@@ -8,25 +8,21 @@ import {
   shuffle,
 } from "../../components/spotify";
 
-const spotifyEndpoint = async (req: NextApiRequest, res: NextApiResponse) => {
+const musicEndpoint = async (req: NextApiRequest, res: NextApiResponse) => {
   await authorizeClient();
 
   const ctTracks: ISong[] = await getAlbum("0zNGd4zx2YBSeJwVlndyIF");
   const swlTracks: ISong[] = await getAlbum("685WVtJgKtEdGCGkf4tzgv");
-  const hfTracks: ISong[] = await getAlbum("2Ony9dUqmqed29IPo8fsxv");
   const topTracks: ISong[] = await getTopTracks();
 
-  const allTracks: ISong[] = [
-    ...topTracks,
-    ...ctTracks,
-    ...hfTracks,
-    ...swlTracks,
-  ].filter((track: ISong) => {
-    const { previewURL, id } = track;
-    return previewURL !== null && id !== "2HZ4WqI3pE4HKRigjA6tii";
-  });
+  const allTracks: ISong[] = [...topTracks, ...ctTracks, ...swlTracks].filter(
+    (track: ISong) => {
+      const { previewURL, id } = track;
+      return previewURL !== null && id !== "2HZ4WqI3pE4HKRigjA6tii";
+    }
+  );
 
   res.status(200).json([...shuffle(allTracks)]);
 };
 
-export default spotifyEndpoint;
+export default musicEndpoint;

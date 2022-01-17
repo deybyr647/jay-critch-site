@@ -10,7 +10,7 @@ $maxpurple: #B4A4F4;
   font-size: 6.2rem;
   font-family: "Pacifico", cursive;
   line-height: 150px;
-  animation: pulsate 1s ease-in-out infinite alternate;
+
   text-shadow: 0 0 7px #fff,
   0 0 10px #fff,
   0 0 21px #fff,
@@ -46,10 +46,26 @@ $maxpurple: #B4A4F4;
 }
 
 .cardContainer {
-  height: 50vh;
+  height: 60vh;
   overflow-y: auto;
 }
 
-.cardLink:hover {
+.songCard {
+  width: 19em;
+}
+
+.extLink {
+  transition: all 300ms ease-in;
+}
+
+.extLink:hover {
   color: $medpurple
+}
+
+@media not all and (min-resolution: .001dpcm) {
+  @supports (-webkit-appearance:none) {
+    .neonText {
+      animation: pulsate 1s ease-in-out infinite alternate;
+    }
+  }
 }

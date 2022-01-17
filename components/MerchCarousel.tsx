@@ -8,6 +8,8 @@ import tmeMasks from "/public/tme/merch/tmemasks.webp";
 import tmeMenShorts from "/public/tme/merch/tmemenshorts.webp";
 import tmePillow from "/public/tme/merch/tmepillow.webp";
 
+import styles from "../styles/Home.module.scss";
+
 const MerchCarousel = () => {
   return (
     <Carousel className={"w-75"}>
@@ -21,7 +23,16 @@ const MerchCarousel = () => {
         />
 
         <Carousel.Caption>
-          <h3 className={"text-platinum bg-onyx"}>Autumn Leaves Hoodie</h3>
+          <h3 className={"text-platinum bg-onyx"}>
+            <a
+              href={"https://www.talkmoneytme.net/product-page/autumn-leaves"}
+              className={styles.extLink}
+              target={"_blank"}
+              rel={"noopener noreferrer"}
+            >
+              Autumn Leaves Hoodie
+            </a>
+          </h3>
         </Carousel.Caption>
       </Carousel.Item>
 
@@ -35,7 +46,16 @@ const MerchCarousel = () => {
         />
 
         <Carousel.Caption>
-          <h3 className={"text-platinum bg-onyx"}>TME Soft Serve Tees</h3>
+          <h3 className={"text-platinum bg-onyx"}>
+            <a
+              href={"https://www.talkmoneytme.net/product-page/tme-soft-serve"}
+              className={styles.extLink}
+              target={"_blank"}
+              rel={"noopener noreferrer"}
+            >
+              TME Soft Serve Tees
+            </a>
+          </h3>
         </Carousel.Caption>
       </Carousel.Item>
 
@@ -49,7 +69,16 @@ const MerchCarousel = () => {
         />
 
         <Carousel.Caption>
-          <h3 className={"text-platinum"}>TME Masks</h3>
+          <h3 className={"text-platinum"}>
+            <a
+              href={"https://www.talkmoneytme.net/product-page/tme-mask"}
+              className={styles.extLink}
+              target={"_blank"}
+              rel={"noopener noreferrer"}
+            >
+              TME Masks
+            </a>
+          </h3>
         </Carousel.Caption>
       </Carousel.Item>
 
@@ -63,7 +92,16 @@ const MerchCarousel = () => {
         />
 
         <Carousel.Caption>
-          <h3 className={"text-platinum bg-onyx"}>TME Hoodie</h3>
+          <h3 className={"text-platinum bg-onyx"}>
+            <a
+              href={"https://www.talkmoneytme.net/product-page/tme-hoodies"}
+              className={styles.extLink}
+              target={"_blank"}
+              rel={"noopener noreferrer"}
+            >
+              TME Hoodie
+            </a>
+          </h3>
         </Carousel.Caption>
       </Carousel.Item>
 
@@ -77,7 +115,18 @@ const MerchCarousel = () => {
         />
 
         <Carousel.Caption>
-          <h3 className={"text-platinum"}>TME Men's Shorts</h3>
+          <h3 className={"text-platinum"}>
+            <a
+              href={
+                "https://www.talkmoneytme.net/product-page/tme-men-s-shorts"
+              }
+              className={styles.extLink}
+              target={"_blank"}
+              rel={"noopener noreferrer"}
+            >
+              TME Men's Shorts
+            </a>
+          </h3>
         </Carousel.Caption>
       </Carousel.Item>
 
@@ -90,7 +139,16 @@ const MerchCarousel = () => {
           placeholder={"blur"}
         />
         <Carousel.Caption>
-          <h3 className={"text-platinum"}>TME Pillow</h3>
+          <h3 className={"text-platinum"}>
+            <a
+              href={"https://www.talkmoneytme.net/product-page/tme-pillows"}
+              className={styles.extLink}
+              target={"_blank"}
+              rel={"noopener noreferrer"}
+            >
+              TME Pillow
+            </a>
+          </h3>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
