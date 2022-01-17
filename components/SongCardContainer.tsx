@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import { ISong } from "./spotify";
 import Jumbotron from "./Jumbotron";
-import MusicCard from "./MusicCard";
+import SongCard from "./SongCard";
 import styles from "../styles/Home.module.scss";
 
-const MusicCardContainer = () => {
+const SongCardContainer = () => {
   const [songs, setSongs] = useState<ISong[]>([]);
-  const [isLoaded, setIsLoaded] = useState(false);
+  const [isLoaded, setIsLoaded] = useState<boolean>(false);
 
   useEffect(() => {
     (async () => {
@@ -28,9 +28,8 @@ const MusicCardContainer = () => {
 
   return (
     <Jumbotron className={`bg-onyx text-platinum ${styles.cardContainer}`}>
-      <h1 className={"text-center mb-4"}>My Music</h1>
       {songs.map((s: ISong) => (
-        <MusicCard
+        <SongCard
           previewURL={s.previewURL}
           name={s.name}
           image={s.image}
@@ -42,4 +41,4 @@ const MusicCardContainer = () => {
   );
 };
 
-export default MusicCardContainer;
+export default SongCardContainer;

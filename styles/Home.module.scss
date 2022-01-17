@@ -6,6 +6,7 @@ $maxpurple: #B4A4F4;
 
 .neonText {
   color: #fff;
+  z-index: 1;
   font-size: 6.2rem;
   font-family: "Pacifico", cursive;
   line-height: 150px;
@@ -47,4 +48,8 @@ $maxpurple: #B4A4F4;
 .cardContainer {
   height: 50vh;
   overflow-y: auto;
+}
+
+.cardLink:hover {
+  color: $medpurple
 }

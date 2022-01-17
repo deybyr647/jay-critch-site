@@ -1,15 +1,23 @@
+import Image from "next/image";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { ISong } from "./spotify";
 
-const MusicCard = ({ previewURL, name, image, spotifyURL }: ISong) => {
+const SongCard = ({ previewURL, name, image, spotifyURL }: ISong) => {
   return (
     <Card
       className={
         "d-flex flex-row bg-platinum text-onyx mb-3 border-medpurple shadow"
       }
     >
-      <Card.Img variant={"top"} src={image.url} className={"w-50"} />
+      <Image
+        className={"card-img-top w-50 p-3 rounded"}
+        src={image.url}
+        width={image.width}
+        height={image.height}
+        alt={name}
+      />
+
       <Card.Body>
         <Card.Title className={"mb-5"}>{name}</Card.Title>
         <audio controls className={"w-100"}>
@@ -29,4 +37,4 @@ const MusicCard = ({ previewURL, name, image, spotifyURL }: ISong) => {
   );
 };
 
-export default MusicCard;
+export default SongCard;
