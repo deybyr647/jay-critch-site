@@ -46,7 +46,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
     project: {
       name: "Jay Critch Site",
       repository: "https://github.com/deybyr647/jay-critch-site",
-      liveSite: "",
+      liveSite: "https://jay-critch-site.vercel.app/",
       hostingProvider: "Vercel",
       createdWith: [
         "Next.js",
