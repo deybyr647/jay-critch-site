@@ -93,7 +93,7 @@ const getTopTracks = async (
       image: images.find((img: ImageObject) => img.width === 300),
       previewURL: preview_url,
       name,
-      i,
+      id,
     };
   });
 };

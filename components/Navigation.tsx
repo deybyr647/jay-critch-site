@@ -11,7 +11,15 @@ const Navigation = () => {
       <Navbar.Brand>JC</Navbar.Brand>
       <Navbar.Toggle aria-controls={"navigation-nav"} />
       <Navbar.Collapse id={"navigation-nav"}>
-        <Nav className={"ms-auto"}>
+        <Nav className={"ms-auto text-center"}>
+          <Nav.Link
+            href={"https://open.spotify.com/artist/6Av6GMCOznZIlHuNcBWgf4"}
+            target={"_blank"}
+            rel={"noopener noreferrer"}
+          >
+            Spotify
+          </Nav.Link>
+
           <Nav.Link
             href={"https://soundcloud.com/JAYCRITCH"}
             target={"_blank"}
@@ -21,11 +29,11 @@ const Navigation = () => {
           </Nav.Link>
 
           <Nav.Link
-            href={"https://open.spotify.com/artist/6Av6GMCOznZIlHuNcBWgf4"}
+            href={"https://music.apple.com/us/artist/jay-critch/1180942034"}
             target={"_blank"}
             rel={"noopener noreferrer"}
           >
-            Spotify
+            Apple Music
           </Nav.Link>
 
           <Nav.Link
@@ -37,11 +45,11 @@ const Navigation = () => {
           </Nav.Link>
 
           <Nav.Link
-            href={"/api/hello"}
+            href={"/api/about"}
             target={"_blank"}
             rel={"noopener noreferrer"}
           >
-            For Developers
+            Extra
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>
