@@ -11,11 +11,11 @@ import {
 const musicEndpoint = async (req: NextApiRequest, res: NextApiResponse) => {
   await authorizeClient();
 
-  const ctTracks: ISong[] = await getAlbum("0zNGd4zx2YBSeJwVlndyIF");
-  const swlTracks: ISong[] = await getAlbum("685WVtJgKtEdGCGkf4tzgv");
+  const critchTapeTracks: ISong[] = await getAlbum("0zNGd4zx2YBSeJwVlndyIF");
+  const signedWithLoveTracks: ISong[] = await getAlbum("685WVtJgKtEdGCGkf4tzgv");
   const topTracks: ISong[] = await getTopTracks();
 
-  const allTracks: ISong[] = [...topTracks, ...ctTracks, ...swlTracks].filter(
+  const allTracks: ISong[] = [...topTracks, ...critchTapeTracks, ...signedWithLoveTracks].filter(
     (track: ISong) => {
       const { previewURL, id } = track;
       return previewURL !== null && id !== "2HZ4WqI3pE4HKRigjA6tii";
